@@ -1,0 +1,22 @@
+@media (max-width:1200px) {
+    .container {
+        padding: 0 35px 0 35px ;
+    }
+
+    .promo {
+        padding: 21px 0 65px 0;
+        &__wrapper {
+            margin-top: 60px;
+        }
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+        &__icoblock {
+            margin-top: 46px;
+            width: 400px;
+        }
+    }
+}
