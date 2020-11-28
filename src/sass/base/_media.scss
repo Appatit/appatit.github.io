@@ -20,3 +20,110 @@
         }
     }
 }
+@media (max-width:992px) {
+    .promo {
+        padding: 21px 0 50px 0;
+        min-height: 100px;
+        &__wrapper {
+            margin-top: 35px;
+        }
+        &__header {
+            font-size: 33px;
+        }
+        &__subheader {
+            font-size: 19px;
+        }
+        &__icoblock {
+            margin-top: 46px;
+            width: 360px;
+        }
+    }
+
+    .advantages {
+        &__wrapper {
+            margin: 40px auto 0 auto;
+        }
+        &__block {
+            width: 200px;
+        }
+        &__title {
+            height: 55px;
+        }
+    }
+
+    .consultation {
+        padding-top: 70px;
+        min-height: 620px;
+        &__descr {
+            margin-top: 55px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .promo {
+        &__header {
+            font-size: 31px;
+        }
+        &__subheader {
+            font-size: 17px;
+        }
+        &__icoblock {
+            margin-top: 35px;
+            width: 360px;
+        }
+    }
+
+    .advantages {
+        &__header {
+            margin-top: 50px;
+        }
+    }
+
+    .consultation {
+        padding-top: 42px;
+        min-height: 650px;
+        .title_left {
+            font-size: 33px;
+        }
+        &__descr {
+            margin-top: 38px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .header {
+        flex-wrap: wrap;
+        &__logo {
+            order: 1;
+        }
+        &__contacts {
+            order: 2;
+        }
+        &__official {
+            padding-top: 10px;
+            width: 200px;
+            order: 3;
+            margin: auto;
+        }
+    }
+}
+
+// @media (max-width:576px) {
+//     .header {
+//         flex-wrap: wrap;
+//         &__logo {
+//             order: 1;
+//         }
+//         &__contacts {
+//             order: 2;
+//         }
+//         &__official {
+//             padding-top: 10px;
+//             width: 200px;
+//             order: 3;
+//             margin: auto;
+//         }
+//     }
+// }
