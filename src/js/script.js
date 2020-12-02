@@ -1,11 +1,18 @@
-var slider = tns({
-    container: '.my-slider',
+$(document).ready(function(){
+
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
     items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    nav: false,
-    controlsText: [
-      '<img src="../ico/chevron-left-solid.svg" alt="">',
-      '<img src="../ico/chevron-right-solid.svg" alt="">',
-    ]
-});
+    dots: false,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+  });
+    
+    $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+      $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active')
+    });
+    
+  });
