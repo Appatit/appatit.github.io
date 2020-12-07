@@ -1,3 +1,4 @@
+// const { on } = require("gulp");
 
   var slider = tns({
     container: '.my-slider',
@@ -11,22 +12,36 @@
     ]
 });
 
-$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
-  $(this)
-    .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
-    .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+
+
+(function($) {
+  $(function() {
+    
+    $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+      $(this)
+        .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+        .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
+    });
+    
+
+
+
+
+});
+})(jQuery);
+
+$('.side-main__detail').each(function(i){
+  $(this).on('click', function(e) {
+    e.preventDefault();
+    $('.side-main').eq(i).toggleClass('side-main_active');
+    $('.side-back').eq(i).toggleClass('side-back_active');
+  })
 });
 
-
-
-// (function($) {
-// $(function() {
-  
-//   $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
-//     $(this)
-//       .addClass('active').siblings().removeClass('active')
-//       .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-//   });
-  
-// });
-// })(jQuery);
+$('.side-back').each(function(i){
+  $(this).on('click', function(e) {
+    e.preventDefault();
+    $('.side-main').eq(i).toggleClass('side-main_active');
+    $('.side-back').eq(i).toggleClass('side-back_active');
+  })
+});
