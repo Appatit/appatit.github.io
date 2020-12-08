@@ -1,0 +1,45 @@
+.reviews {
+    margin-top: 100px;
+    display: block;
+    margin: 70px auto;
+    h2 {
+        color: #0d0d0d;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: pink;
+        img {
+            max-width: 170px;
+            max-height: 170px;
+        }
+        
+        &__text {
+            margin-top: 70px;
+            .name {
+                max-width: 650px;
+                color: #0d0d0d;
+                font-size: 18px;
+                font-weight: 700;
+                text-align: left;
+            }
+            .wins {
+                color: #646464;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: left;
+            }
+            .main-text {
+                color: #0d0d0d;
+                font-size: 16px;
+                font-weight: 300;
+                text-align: left;
+            }
+        }
+    }
+}
