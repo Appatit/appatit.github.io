@@ -10,17 +10,19 @@
         text-transform: uppercase;
     }
     &__block {
+        margin-top: 70px;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: pink;
+        align-items: center;
         img {
-            max-width: 170px;
-            max-height: 170px;
+            // max-width: 170px;
+            // max-height: 170px;
         }
         
         &__text {
-            margin-top: 70px;
+            max-width: 650px;
             .name {
                 max-width: 650px;
                 color: #0d0d0d;
@@ -29,12 +31,14 @@
                 text-align: left;
             }
             .wins {
+                margin-top: 10px;
                 color: #646464;
                 font-size: 14px;
                 font-weight: 300;
                 text-align: left;
             }
             .main-text {
+                margin-top: 19px;
                 color: #0d0d0d;
                 font-size: 16px;
                 font-weight: 300;
